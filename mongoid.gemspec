@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["Durran Jordan"]
-  s.date = %q{2010-02-07}
+  s.date = %q{2010-02-08}
   s.email = %q{durran@gmail.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -233,117 +233,117 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{ODM framework for MongoDB}
   s.test_files = [
-    "spec/integration/mongoid/associations_spec.rb",
-     "spec/integration/mongoid/attributes_spec.rb",
-     "spec/integration/mongoid/commands_spec.rb",
-     "spec/integration/mongoid/contexts/enumerable_spec.rb",
-     "spec/integration/mongoid/criteria_spec.rb",
-     "spec/integration/mongoid/document_spec.rb",
-     "spec/integration/mongoid/extensions_spec.rb",
-     "spec/integration/mongoid/finders_spec.rb",
-     "spec/integration/mongoid/inheritance_spec.rb",
-     "spec/integration/mongoid/named_scope_spec.rb",
-     "spec/models/address.rb",
-     "spec/models/animal.rb",
-     "spec/models/comment.rb",
-     "spec/models/country_code.rb",
-     "spec/models/employer.rb",
-     "spec/models/game.rb",
+    "spec/models/post.rb",
      "spec/models/inheritance.rb",
+     "spec/models/name.rb",
+     "spec/models/vet_visit.rb",
+     "spec/models/translation.rb",
+     "spec/models/game.rb",
      "spec/models/location.rb",
      "spec/models/mixed_drink.rb",
-     "spec/models/name.rb",
-     "spec/models/namespacing.rb",
-     "spec/models/patient.rb",
+     "spec/models/address.rb",
      "spec/models/person.rb",
-     "spec/models/pet.rb",
      "spec/models/pet_owner.rb",
+     "spec/models/comment.rb",
+     "spec/models/pet.rb",
+     "spec/models/employer.rb",
+     "spec/models/namespacing.rb",
+     "spec/models/country_code.rb",
+     "spec/models/patient.rb",
+     "spec/models/animal.rb",
      "spec/models/phone.rb",
-     "spec/models/post.rb",
-     "spec/models/translation.rb",
-     "spec/models/vet_visit.rb",
-     "spec/spec_helper.rb",
-     "spec/unit/mongoid/associations/belongs_to_related_spec.rb",
-     "spec/unit/mongoid/associations/belongs_to_spec.rb",
-     "spec/unit/mongoid/associations/has_many_related_spec.rb",
-     "spec/unit/mongoid/associations/has_many_spec.rb",
-     "spec/unit/mongoid/associations/has_one_related_spec.rb",
-     "spec/unit/mongoid/associations/has_one_spec.rb",
-     "spec/unit/mongoid/associations/options_spec.rb",
-     "spec/unit/mongoid/associations_spec.rb",
-     "spec/unit/mongoid/attributes_spec.rb",
-     "spec/unit/mongoid/callbacks_spec.rb",
-     "spec/unit/mongoid/collection_spec.rb",
-     "spec/unit/mongoid/collections/cyclic_iterator_spec.rb",
-     "spec/unit/mongoid/collections/master_spec.rb",
-     "spec/unit/mongoid/collections/mimic_spec.rb",
-     "spec/unit/mongoid/collections/slaves_spec.rb",
-     "spec/unit/mongoid/commands/create_spec.rb",
-     "spec/unit/mongoid/commands/delete_all_spec.rb",
-     "spec/unit/mongoid/commands/delete_spec.rb",
-     "spec/unit/mongoid/commands/destroy_all_spec.rb",
-     "spec/unit/mongoid/commands/destroy_spec.rb",
-     "spec/unit/mongoid/commands/save_spec.rb",
-     "spec/unit/mongoid/commands_spec.rb",
-     "spec/unit/mongoid/config_spec.rb",
-     "spec/unit/mongoid/contexts/enumerable_spec.rb",
-     "spec/unit/mongoid/contexts/mongo_spec.rb",
-     "spec/unit/mongoid/criteria_spec.rb",
-     "spec/unit/mongoid/criterion/complex_spec.rb",
-     "spec/unit/mongoid/criterion/exclusion_spec.rb",
-     "spec/unit/mongoid/criterion/inclusion_spec.rb",
-     "spec/unit/mongoid/criterion/optional_spec.rb",
-     "spec/unit/mongoid/cursor_spec.rb",
-     "spec/unit/mongoid/document_spec.rb",
-     "spec/unit/mongoid/errors_spec.rb",
-     "spec/unit/mongoid/extensions/array/accessors_spec.rb",
-     "spec/unit/mongoid/extensions/array/assimilation_spec.rb",
-     "spec/unit/mongoid/extensions/array/conversions_spec.rb",
-     "spec/unit/mongoid/extensions/array/parentization_spec.rb",
-     "spec/unit/mongoid/extensions/boolean/conversions_spec.rb",
-     "spec/unit/mongoid/extensions/date/conversions_spec.rb",
-     "spec/unit/mongoid/extensions/datetime/conversions_spec.rb",
-     "spec/unit/mongoid/extensions/float/conversions_spec.rb",
-     "spec/unit/mongoid/extensions/hash/accessors_spec.rb",
-     "spec/unit/mongoid/extensions/hash/assimilation_spec.rb",
-     "spec/unit/mongoid/extensions/hash/conversions_spec.rb",
-     "spec/unit/mongoid/extensions/hash/criteria_helpers_spec.rb",
-     "spec/unit/mongoid/extensions/hash/scoping_spec.rb",
-     "spec/unit/mongoid/extensions/integer/conversions_spec.rb",
-     "spec/unit/mongoid/extensions/nil/assimilation_spec.rb",
-     "spec/unit/mongoid/extensions/object/conversions_spec.rb",
-     "spec/unit/mongoid/extensions/proc/scoping_spec.rb",
-     "spec/unit/mongoid/extensions/string/conversions_spec.rb",
-     "spec/unit/mongoid/extensions/string/inflections_spec.rb",
-     "spec/unit/mongoid/extensions/symbol/inflections_spec.rb",
-     "spec/unit/mongoid/extensions/time/conversions_spec.rb",
-     "spec/unit/mongoid/factory_spec.rb",
-     "spec/unit/mongoid/field_spec.rb",
-     "spec/unit/mongoid/fields_spec.rb",
-     "spec/unit/mongoid/finders_spec.rb",
-     "spec/unit/mongoid/identity_spec.rb",
-     "spec/unit/mongoid/indexes_spec.rb",
-     "spec/unit/mongoid/matchers/all_spec.rb",
-     "spec/unit/mongoid/matchers/default_spec.rb",
-     "spec/unit/mongoid/matchers/exists_spec.rb",
-     "spec/unit/mongoid/matchers/gt_spec.rb",
-     "spec/unit/mongoid/matchers/gte_spec.rb",
-     "spec/unit/mongoid/matchers/in_spec.rb",
-     "spec/unit/mongoid/matchers/lt_spec.rb",
-     "spec/unit/mongoid/matchers/lte_spec.rb",
-     "spec/unit/mongoid/matchers/ne_spec.rb",
-     "spec/unit/mongoid/matchers/nin_spec.rb",
-     "spec/unit/mongoid/matchers/size_spec.rb",
-     "spec/unit/mongoid/matchers_spec.rb",
-     "spec/unit/mongoid/memoization_spec.rb",
-     "spec/unit/mongoid/named_scope_spec.rb",
-     "spec/unit/mongoid/scope_spec.rb",
-     "spec/unit/mongoid/timestamps_spec.rb",
-     "spec/unit/mongoid/validations/associated_spec.rb",
-     "spec/unit/mongoid/validations/uniqueness_spec.rb",
      "spec/unit/mongoid/validations_spec.rb",
      "spec/unit/mongoid/versioning_spec.rb",
-     "spec/unit/mongoid_spec.rb"
+     "spec/unit/mongoid/attributes_spec.rb",
+     "spec/unit/mongoid/contexts/mongo_spec.rb",
+     "spec/unit/mongoid/contexts/enumerable_spec.rb",
+     "spec/unit/mongoid/matchers/lte_spec.rb",
+     "spec/unit/mongoid/matchers/lt_spec.rb",
+     "spec/unit/mongoid/matchers/gte_spec.rb",
+     "spec/unit/mongoid/matchers/ne_spec.rb",
+     "spec/unit/mongoid/matchers/gt_spec.rb",
+     "spec/unit/mongoid/matchers/default_spec.rb",
+     "spec/unit/mongoid/matchers/size_spec.rb",
+     "spec/unit/mongoid/matchers/nin_spec.rb",
+     "spec/unit/mongoid/matchers/all_spec.rb",
+     "spec/unit/mongoid/matchers/exists_spec.rb",
+     "spec/unit/mongoid/matchers/in_spec.rb",
+     "spec/unit/mongoid/errors_spec.rb",
+     "spec/unit/mongoid/finders_spec.rb",
+     "spec/unit/mongoid/associations_spec.rb",
+     "spec/unit/mongoid/collections/mimic_spec.rb",
+     "spec/unit/mongoid/collections/slaves_spec.rb",
+     "spec/unit/mongoid/collections/master_spec.rb",
+     "spec/unit/mongoid/collections/cyclic_iterator_spec.rb",
+     "spec/unit/mongoid/named_scope_spec.rb",
+     "spec/unit/mongoid/criteria_spec.rb",
+     "spec/unit/mongoid/collection_spec.rb",
+     "spec/unit/mongoid/cursor_spec.rb",
+     "spec/unit/mongoid/indexes_spec.rb",
+     "spec/unit/mongoid/matchers_spec.rb",
+     "spec/unit/mongoid/document_spec.rb",
+     "spec/unit/mongoid/fields_spec.rb",
+     "spec/unit/mongoid/memoization_spec.rb",
+     "spec/unit/mongoid/associations/has_many_spec.rb",
+     "spec/unit/mongoid/associations/belongs_to_related_spec.rb",
+     "spec/unit/mongoid/associations/has_many_related_spec.rb",
+     "spec/unit/mongoid/associations/belongs_to_spec.rb",
+     "spec/unit/mongoid/associations/options_spec.rb",
+     "spec/unit/mongoid/associations/has_one_spec.rb",
+     "spec/unit/mongoid/associations/has_one_related_spec.rb",
+     "spec/unit/mongoid/extensions/array/parentization_spec.rb",
+     "spec/unit/mongoid/extensions/array/conversions_spec.rb",
+     "spec/unit/mongoid/extensions/array/assimilation_spec.rb",
+     "spec/unit/mongoid/extensions/array/accessors_spec.rb",
+     "spec/unit/mongoid/extensions/boolean/conversions_spec.rb",
+     "spec/unit/mongoid/extensions/proc/scoping_spec.rb",
+     "spec/unit/mongoid/extensions/string/inflections_spec.rb",
+     "spec/unit/mongoid/extensions/string/conversions_spec.rb",
+     "spec/unit/mongoid/extensions/time/conversions_spec.rb",
+     "spec/unit/mongoid/extensions/symbol/inflections_spec.rb",
+     "spec/unit/mongoid/extensions/hash/criteria_helpers_spec.rb",
+     "spec/unit/mongoid/extensions/hash/conversions_spec.rb",
+     "spec/unit/mongoid/extensions/hash/assimilation_spec.rb",
+     "spec/unit/mongoid/extensions/hash/accessors_spec.rb",
+     "spec/unit/mongoid/extensions/hash/scoping_spec.rb",
+     "spec/unit/mongoid/extensions/nil/assimilation_spec.rb",
+     "spec/unit/mongoid/extensions/integer/conversions_spec.rb",
+     "spec/unit/mongoid/extensions/date/conversions_spec.rb",
+     "spec/unit/mongoid/extensions/float/conversions_spec.rb",
+     "spec/unit/mongoid/extensions/object/conversions_spec.rb",
+     "spec/unit/mongoid/extensions/datetime/conversions_spec.rb",
+     "spec/unit/mongoid/scope_spec.rb",
+     "spec/unit/mongoid/commands/destroy_spec.rb",
+     "spec/unit/mongoid/commands/save_spec.rb",
+     "spec/unit/mongoid/commands/destroy_all_spec.rb",
+     "spec/unit/mongoid/commands/delete_spec.rb",
+     "spec/unit/mongoid/commands/create_spec.rb",
+     "spec/unit/mongoid/commands/delete_all_spec.rb",
+     "spec/unit/mongoid/timestamps_spec.rb",
+     "spec/unit/mongoid/callbacks_spec.rb",
+     "spec/unit/mongoid/commands_spec.rb",
+     "spec/unit/mongoid/criterion/inclusion_spec.rb",
+     "spec/unit/mongoid/criterion/optional_spec.rb",
+     "spec/unit/mongoid/criterion/exclusion_spec.rb",
+     "spec/unit/mongoid/criterion/complex_spec.rb",
+     "spec/unit/mongoid/field_spec.rb",
+     "spec/unit/mongoid/config_spec.rb",
+     "spec/unit/mongoid/factory_spec.rb",
+     "spec/unit/mongoid/validations/uniqueness_spec.rb",
+     "spec/unit/mongoid/validations/associated_spec.rb",
+     "spec/unit/mongoid/identity_spec.rb",
+     "spec/unit/mongoid_spec.rb",
+     "spec/integration/mongoid/attributes_spec.rb",
+     "spec/integration/mongoid/contexts/enumerable_spec.rb",
+     "spec/integration/mongoid/inheritance_spec.rb",
+     "spec/integration/mongoid/finders_spec.rb",
+     "spec/integration/mongoid/extensions_spec.rb",
+     "spec/integration/mongoid/associations_spec.rb",
+     "spec/integration/mongoid/named_scope_spec.rb",
+     "spec/integration/mongoid/criteria_spec.rb",
+     "spec/integration/mongoid/document_spec.rb",
+     "spec/integration/mongoid/commands_spec.rb",
+     "spec/spec_helper.rb"
   ]
 
   if s.respond_to? :specification_version then
@@ -354,22 +354,12 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<activemodel>, [">= 3.0.pre"])
       s.add_runtime_dependency(%q<will_paginate>, [">= 3.0.pre"])
       s.add_runtime_dependency(%q<mongo>, [">= 0.18.2"])
-      s.add_runtime_dependency(%q<durran-validatable>, [">= 2.0.1"])
-<<<<<<< HEAD
-=======
-      s.add_runtime_dependency(%q<will_paginate>, [">= 2.3.11"])
->>>>>>> master
       s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
       s.add_development_dependency(%q<mocha>, [">= 0.9.8"])
     else
       s.add_dependency(%q<activemodel>, [">= 3.0.pre"])
       s.add_dependency(%q<will_paginate>, [">= 3.0.pre"])
       s.add_dependency(%q<mongo>, [">= 0.18.2"])
-      s.add_dependency(%q<durran-validatable>, [">= 2.0.1"])
-<<<<<<< HEAD
-=======
-      s.add_dependency(%q<will_paginate>, [">= 2.3.11"])
->>>>>>> master
       s.add_dependency(%q<rspec>, [">= 1.2.9"])
       s.add_dependency(%q<mocha>, [">= 0.9.8"])
     end
@@ -377,11 +367,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<activemodel>, [">= 3.0.pre"])
     s.add_dependency(%q<will_paginate>, [">= 3.0.pre"])
     s.add_dependency(%q<mongo>, [">= 0.18.2"])
-    s.add_dependency(%q<durran-validatable>, [">= 2.0.1"])
-<<<<<<< HEAD
-=======
-    s.add_dependency(%q<will_paginate>, [">= 2.3.11"])
->>>>>>> master
     s.add_dependency(%q<rspec>, [">= 1.2.9"])
     s.add_dependency(%q<mocha>, [">= 0.9.8"])
   end
